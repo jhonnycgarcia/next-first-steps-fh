@@ -6,7 +6,9 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker build -t next-first-steps .",
+    "docker:run": "docker container run -dp 3000:3000 next-first-steps"
   },
   "dependencies": {
     "@primer/octicons-react": "^19.15.5",
